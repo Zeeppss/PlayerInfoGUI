@@ -1,0 +1,8 @@
+name: PlayerInfoGUI
+version: 1.0
+main: dev.zeeppss.pinfogui.Main
+author: Zeeppss
+description: List of player info located in the GUI.
+commands:
+  online:
+    description: online
