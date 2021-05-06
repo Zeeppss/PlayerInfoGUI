@@ -12,7 +12,7 @@ public class OnlineClickEvent implements Listener {
     @EventHandler
     public void onOnline(InventoryClickEvent event) {
         Player[] players = Bukkit.getServer().getOnlinePlayers().toArray(new Player[0]);
-        Player player = (Player)event.getWhoClicked();
+        Player player = (Player) event.getWhoClicked();
         if (event.getCurrentItem() != null && event.getCurrentItem().getType() != Material.AIR && event.getInventory().getName().equals("Current Players [" + players.length + "]")) {
             event.setCancelled(true);
             player.updateInventory();
